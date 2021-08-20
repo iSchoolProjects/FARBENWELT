@@ -270,20 +270,6 @@ h3 {
     color: blue;
 }
 
-
-
-/* section.front {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    background: black;
-    overflow: hidden;
-}
-
-.front-img.overlay {
-    object-fit: cover;
-    opacity: 0.5;
-} */
 section.middle {
     display: flex;
     width: 100%;
@@ -356,4 +342,45 @@ section.middle {
 
 .center {
     float: none;
+}
+
+section.last {
+    display: flex;
+    width: 100%;
+    background: #07103E;
+}
+
+.last-img {
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+
+
+.last-img.overlay {
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+}
+
+.last .row {
+    margin-left: 20%;
+    margin-right: 20%;
+    justify-content: space-around;
+    position: absolute;
+    color: white;
+}
+
+section.last .col3 {
+    background: #07103E;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.d-flex {
+    display: flex;
 }
