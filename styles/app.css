@@ -1,0 +1,359 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    display: flex;
+    height: 70px;
+    width: 100%;
+
+    background-color: white;
+    justify-content: space-between;
+}
+
+header .logo {
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    padding: 10px;
+}
+
+.logo img {
+    width: 50%;
+}
+
+header .info {
+    height: 70px;
+    position: relative;
+    width: 60%;
+    background-color: #09175D;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: start;
+    color: white;
+}
+
+.info:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 70px solid white;
+    border-right: 80px solid #09175D;
+    width: 0;
+}
+
+hr {
+    width: 10%;
+}
+
+/* promijeniti boju */
+.willkomen hr {
+    border: 1px solid #E6C311;
+}
+
+button {
+    background: white;
+    border: 2px solid blue;
+
+}
+
+button a {
+    font-size: 1.2rem;
+    color: black;
+    text-decoration: none;
+}
+
+nav {
+    margin: 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    padding: 20px;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+
+}
+
+.front-img {
+    display: block;
+    position: relative;
+}
+
+section.front {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: black;
+    overflow: hidden;
+}
+
+.front-img.overlay {
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.front-text {
+    margin-left: 35%;
+    text-align: center;
+    margin-right: 35%;
+    position: absolute;
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h3 {
+    text-transform: uppercase;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.front-text p {
+    padding-top: 10px;
+}
+
+
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    align-items: center;
+
+}
+
+.column {
+    width: 30%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 100%;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.p-2 {
+    padding: 20px;
+}
+
+.pt-2 {
+    padding-top: 20px;
+}
+
+.pb-2 {
+    padding-bottom: 20px;
+}
+
+.p-1 {
+    padding: 10px;
+}
+
+.pt-1 {
+    padding-top: 10px;
+}
+
+.pb-1 {
+    padding-bottom: 10px;
+}
+
+
+.mt-2 {
+    margin-top: 20px;
+}
+
+.mb-2 {
+    margin-bottom: 20px;
+}
+
+.m-2 {
+    margin: 20px;
+}
+
+.m-4 {
+    margin: 40px;
+}
+
+.white {
+    color: white;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.card1 {
+    background-image: url(/images/Subtraction\ 1.jpg);
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+/* napraviti posebnu klasu za peding 40px */
+.card1 p {
+    padding: 30px;
+    padding-left: 65px;
+}
+
+.card2 p {
+    padding: 30px;
+    padding-left: 65px;
+}
+
+.card3 p {
+    padding: 30px;
+    padding-left: 65px;
+}
+
+.card2 {
+    background-image: url(/images/Subtraction\ 2.jpg);
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card3 {
+    background-image: url(/images/Subtraction\ 3.jpg);
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* promijeniti boju */
+.willkomen h2 {
+    color: blue;
+}
+
+
+
+/* section.front {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: black;
+    overflow: hidden;
+}
+
+.front-img.overlay {
+    object-fit: cover;
+    opacity: 0.5;
+} */
+section.middle {
+    display: flex;
+    width: 100%;
+    background: #28284A;
+}
+
+.middle-img {
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+
+
+.middle-img.overlay {
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+}
+
+.middle-text {
+    margin-left: 35%;
+    text-align: center;
+    margin-right: 35%;
+    position: absolute;
+    color: white;
+    padding: 20px;
+}
+
+.middle-text p {
+    text-align: center;
+    line-height: 1.5;
+}
+
+.project h2 {
+    color: #E6C311;
+}
+
+.project hr {
+    border: 2px solid #DB0A22;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: left;
+}
+
+.project p {
+    margin-top: 20px;
+    padding-top: 20px;
+
+}
+
+.project .row {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.col8 {
+    width: 60%;
+}
+
+.col4 {
+
+    width: 35%;
+}
+
+.col4 p {
+    text-align: start;
+}
+
+.center {
+    float: none;
+}
