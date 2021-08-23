@@ -53,10 +53,18 @@ hr {
     border: 1px solid #E6C311;
 }
 
+.border-yellow {
+    border: 1px solid #E6C311;
+}
+
 button {
     background: white;
     border: 2px solid blue;
 
+}
+
+.col4 img {
+    width: 50%;
 }
 
 button a {
@@ -140,8 +148,6 @@ h3 {
     padding-top: 10px;
 }
 
-
-
 .row {
     display: flex;
     justify-content: space-around;
@@ -149,7 +155,6 @@ h3 {
     margin-left: 20%;
     margin-right: 20%;
     align-items: center;
-
 }
 
 .column {
@@ -220,8 +225,73 @@ h3 {
     color: white;
 }
 
+.w-30 {
+    width: 25%;
+}
+
+
+.w-50 {
+    width: 45%;
+}
+
+.h-50 {
+    height: 50%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.h-200px {
+    height: 200px;
+}
+
 .w-100 {
     width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-start {
+    text-align: start;
+}
+
+.m-r70 {
+    margin-right: 70%;
+}
+
+.bg-gray {
+    background-color: rgb(232, 232, 232);
+}
+
+.bg-white {
+    background-color: rgb(245, 245, 245);
+}
+
+.border-blue {
+    border: 1px solid blue;
+}
+
+.border-white {
+    border: 1px solid white;
+}
+
+.border-red {
+    border: 1px solid red;
+}
+
+.color-blue {
+    color: #50f2f2;
+}
+
+.color-white {
+    color: white;
+}
+
+.color-black {
+    color: black;
 }
 
 .card1 {
@@ -230,7 +300,6 @@ h3 {
     height: 250px;
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 
 /* napraviti posebnu klasu za peding 40px */
@@ -267,7 +336,7 @@ h3 {
 
 /* promijeniti boju */
 .willkomen h2 {
-    color: blue;
+    color: #156ead;
 }
 
 section.middle {
@@ -281,8 +350,6 @@ section.middle {
     display: block;
     position: relative;
 }
-
-
 
 .middle-img.overlay {
     width: 100%;
@@ -302,6 +369,10 @@ section.middle {
 .middle-text p {
     text-align: center;
     line-height: 1.5;
+}
+
+.middle button {
+    padding: 15px;
 }
 
 .project h2 {
@@ -324,7 +395,6 @@ section.middle {
 .project .row {
     flex-direction: row;
     flex-wrap: wrap;
-
 }
 
 .col8 {
@@ -332,7 +402,6 @@ section.middle {
 }
 
 .col4 {
-
     width: 35%;
 }
 
@@ -341,13 +410,16 @@ section.middle {
 }
 
 .center {
-    float: none;
+    float: none !important;
 }
 
 section.last {
     display: flex;
     width: 100%;
     background: #07103E;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .last-img {
@@ -356,31 +428,255 @@ section.last {
     position: relative;
 }
 
-
-
 .last-img.overlay {
     width: 100%;
     object-fit: cover;
     opacity: 0.3;
 }
 
-.last .row {
-    margin-left: 20%;
-    margin-right: 20%;
+section.last .row {
+    width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
     justify-content: space-around;
     position: absolute;
     color: white;
 }
 
 section.last .col3 {
-    background: #07103E;
     width: 200px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .d-flex {
     display: flex;
+}
+
+.col6 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: content-box;
+    border-radius: 5px;
+}
+
+.bg-yellow {
+    background-color: #dbde26;
+    width: 200px;
+    height: 200px;
+    transform: rotate(+10deg);
+}
+
+.bg-purple {
+    background-color: #402980;
+    transform: rotate(-10deg);
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+.bg-yellow-rotate {
+    background-color: #dbde26;
+    width: 200px;
+    height: 200px;
+    transform: rotate(-10deg);
+}
+
+.bg-purple-rotate {
+    background-color: #402980;
+    transform: rotate(+10deg);
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact {
+    width: 80%;
+}
+
+.contact h3 {
+    color: #105b91;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.color-red {
+    border: 1px solid red !important;
+}
+
+.font-small {
+    font-size: 0.8rem;
+}
+
+.text-red {
+    color: red;
+}
+
+.color-purple {
+    border: 1px solid purple;
+}
+
+.partners .d-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer .logo {
+    width: 100%;
+    padding: 10px;
+}
+
+footer nav a {
+    color: white !important;
+}
+
+footer li a:hover {
+    font-family: 700;
+    background-color: white !important;
+    color: black !important;
+}
+
+.row.d-flex.about {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* section.front {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: black;
+    overflow: hidden;
+}
+
+.front-img.overlay {
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.front-text {
+    margin-left: 35%;
+    text-align: center;
+    margin-right: 35%;
+    position: absolute;
+    color: white;
+    padding: 20px;
+} */
+section.something {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: #402980;
+    overflow: hidden;
+}
+
+.something-img.overlay {
+    object-fit: cover;
+    opacity: 0.3;
+}
+
+.something-text {
+    display: flex;
+    flex-direction: row;
+    margin-left: 35%;
+    text-align: center;
+    margin-right: 35%;
+    position: absolute;
+    color: white;
+    padding: 20px;
+}
+
+.font-large {
+    font-size: 2.5rem;
+}
+
+.something-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.arbeiten .row {
+    justify-content: space-between !important;
+}
+
+.arbeiten .col4 {
+    width: 25%;
+}
+
+.arbeiten img {
+    width: 100%;
+}
+
+.row.d-flex.leistungen {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.row.d-flex.leistungen .col4 {
+    width: 32%;
+}
+
+.row.d-flex.leistungen .col4 img {
+    width: 100%;
+}
+
+.row.d-flex.leistungen .col4 img h4 {
+    width: 100%;
+}
+
+.front-text.kontakt {
+    width: 700px;
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    width: 600px;
+    height: 400px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    width: 600px;
+    height: 400px;
+}
+
+.gmap_iframe {
+    width: 600px !important;
+    height: 400px !important;
 }
