@@ -9,8 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css">
     <link rel="stylesheet" href="/styles/reset.css">
     <link rel="stylesheet" href="styles/app.css">
     <title>Farbenwelt │ Home</title>
@@ -19,38 +18,39 @@
 <body>
 
     <header>
-        <!-- dodati ikonice-->
+
         <div class="logo">
             <img src="logo_farbenwelt.png" alt="logo">
         </div>
         <div class="info">
-            <div class="info1">
-                <p>Ottostr. 3</p>
-                <p>45470 Mülheim an der Ruhr</p>
-                <!-- <i class="fas fa-map-marker-alt"></i> -->
+            <div class="info1 d-flex">
+                <i class="fas fa-map-marker mr-2"></i>
+                <div>
+                    <p class="pb-1">Ottostr. 3</p>
+                    <p>45470 Mülheim an der Ruhr</p>
+
+                </div>
             </div>
-            <div class="info2">
-                <p>Fon +49 (0) 208/91108405
-                </p>
-                <p>
-                    Mobil +49 (0) 177-8609077
-                </p>
-                <!-- <i class="fas fa-mobile"></i> -->
+            <div class="info2  d-flex">
+                <i class="fas fa-mobile mr-2"></i>
+                <div>
+                    <p class="pb-1">Fon +49 (0) 208/91108405</p>
+                    <p>Mobil +49 (0) 177-8609077</p>
+                </div>
             </div>
         </div>
 
     </header>
 
     <nav>
-
         <ul>
-            <li><a href="#">home</a></li>
-            <li><a href="#">Wir uber uns?</a></li>
-            <li><a href="#">Impressionen</a></li>
-            <li><a href="#">Leistungen</a></li>
-            <li><a href="#">kontakt</a></li>
+            <li><a class="bold active" href="index.html">home</a></li>
+            <li><a class="bold " href="about.html">Wir uber uns?</a></li>
+            <li><a class="bold " href="works.html">Impressionen</a></li>
+            <li><a class="bold " href="services.html">Leistungen</a></li>
+            <li> <a class="bold " href="contact.html">kontakt</a> </li>
         </ul>
-
+        </div>
     </nav>
 
     <section class="front">
@@ -59,7 +59,7 @@
             <img src="images/color-patterns-2370497_1920.jpg" alt="">
         </div>
         <div class="front-text">
-            <h1>Professionelle Malerei
+            <h1 class="uppercase">Professionelle Malerei
                 Unternehmen</h1>
             <hr>
             <p>Kreativ, individuell und kundennah!</p>
@@ -67,7 +67,7 @@
 
     </section>
 
-    <section>
+    <section class="cards mt-2 pt-2 mb-2">
 
         <div class="row">
 
@@ -75,7 +75,7 @@
                 <div class="card1">
                     <div class=" white pt-1 pb-2">
                         <h3 class="pt-1">Hausdesign</h3>
-                        <p>Bei der Renovierung Ihres Hauses ist besondere Vorsicht geboten, da alte
+                        <p class="font-small">Bei der Renovierung Ihres Hauses ist besondere Vorsicht geboten, da alte
                             Häuser voller
                             Überraschungen
                             sind und die Kosten sich schnell summieren können. Wählen Sie uns und machen Sie
@@ -85,12 +85,12 @@
                     </div>
                 </div>
             </div>
-            <!-- srediti pedinge , iskace drugi p iz p-slike -->
+
             <div class="column">
                 <div class="card2">
                     <div class=" white pt-1">
                         <h3 class="pt-1">Fassadengestaltung</h3>
-                        <p>Ein wichtiger Aspekt unserer Reparaturdienste besteht darin, ein Gebäude
+                        <p class="font-small">Ein wichtiger Aspekt unserer Reparaturdienste besteht darin, ein Gebäude
                             von
                             Zeiteinflüssen,
                             Schadstoffen, minderwertigen Materialien fernzuhalten sowie fehlerhafte
@@ -105,7 +105,7 @@
                 <div class="card3">
                     <div class="white pt-1 pb-2">
                         <h3 class="pt-1">Gewerbeobjekt</h3>
-                        <p>ls gewerbliche Bauunternehmerarbeiten wir in ganz Deutschland an
+                        <p class="font-small">ls gewerbliche Bauunternehmerarbeiten wir in ganz Deutschland an
                             Projekten
                             wie
                             Grundstücks-erweiterungen, gewerblichen Umbauten, Dachinstallation unds -wartung, Stahl-
@@ -121,13 +121,13 @@
 
     <section>
 
-        <div class="container p-2 mt-2 willkomen">
+        <div class="d-flex-col-jcc p-2 mt-2 willkomen">
             <h2 class="pt-2">Willkommen in der Farbenwelt</h2>
             <hr class="m-2">
             <p class="p-2 mb-2">Wir verschönern Ihr Haus, Ihre Wohnung oder Ihr Gewerbeobjekt</p>
-            <button class="p-2"><a href="#">Kontaktiere uns</a></button>
+            <button class="p-2 uppercase border-blue mb-2"><a href="#">Kontaktiere uns</a></button>
         </div>
-        <!-- #28284A -->
+
     </section>
 
     <section class="middle">
@@ -136,12 +136,12 @@
             <img class="w-100" src="images/color-patterns-1984227_1920.jpg" alt="">
         </div>
 
-        <div class="middle-text m-4">
+        <div class="middle-text  mt-2 container">
 
-            <h2 class="pb-2">Warum uns wählen</h2>
+            <h2 class=" pt-2 mt-2">Warum uns wählen</h2>
             <hr class="mb-2">
-            <h2 class="pb-2">kreativ, individuell und kundennah
-            </h2>
+            <h3 class="pb-2">kreativ, individuell und kundennah
+            </h3>
             <p class="pb-2">Für uns ist die kreative, individuelle Gestaltung von Räumen und Fassaden eine der
                 wichtigsten Aufgaben.
                 Hier fühlen wir uns der Tradition und dem handwerklichen Können verpflichtet. Dabei verlieren wir nicht
@@ -151,35 +151,37 @@
             <p class="pb-2">Wir bieten neben klassischen Malerarbeiten auch die Instandhaltung der Bau-substanz und
                 Verschönerung von
                 Oberflächen.</p>
-            <button class="p-2 m-2"><a href="#">Hinten mehr über uns</a></button>
+            <button class="p-2 m-2 uppercase"><a href="#">Hinten mehr über uns</a></button>
 
         </div>
 
     </section>
 
-    <section>
-
+    <section class="mt-2 pt-2">
         <div class="project">
-
             <h2>Neueste Projekte</h2>
-            <hr class="center">
-            <div class="row">
+            <hr class="center mb-1" />
 
+            <div class="row">
                 <div class="col8">
-                    <img src="images/Group 16.jpg" alt="">
+                    <img src="images/Group 16.png" alt="">
                 </div>
 
-                <div class="col4">
+                <div class="col4 ">
                     <h3>Hochmodernes Haus</h3>
                     <hr>
-                    <p>Das Projekt der Modernisierung des geerbten Hauses und seiner Renovierung ist eine Aufgabe, die
+                    <p>Das Projekt der Modernisierung des geerbten Hauses und seiner Renovierung ist eine Aufgabe,
+                        die
                         ein beneidenswertes Maß an Sorgfalt und Genialität erfordert.
                         Auf der anderen Seite muss die Straßenfassade jedes historischen Hauses erhalten bleiben,
-                        während ihre Innenräume einer vollständigen Umgestaltung bedürfen, die hauptsächlich zu ihrer
-                        Erfrischung und Zweckmäßigkeit führt. Das Projekt dieses Hauses war eine solche ungewöhnliche
+                        während ihre Innenräume einer vollständigen Umgestaltung bedürfen, die hauptsächlich zu
+                        ihrer
+                        Erfrischung und Zweckmäßigkeit führt. Das Projekt dieses Hauses war eine solche
+                        ungewöhnliche
                         Restaurierung des Hauses.</p>
                 </div>
-
+            </div>
+            <div class="row reverse">
                 <div class="col4">
                     <h3>moderne Vorstadtvilla</h3>
                     <hr>
@@ -194,7 +196,8 @@
                 <div class="col8">
                     <img src="images/kuca2.jpg" alt="">
                 </div>
-
+            </div>
+            <div class="row">
                 <div class="col8">
                     <img src="images/impresivna-savremena-kuca-uz-reku-oblozena-crnim-cempresom.jpg" alt="">
                 </div>
@@ -208,71 +211,90 @@
                         In dieser Hinsicht gibt es ein Schwimmbad, einen Basketballplatz rund um das Haus sowie ein
                         Deck, an das ein Boot gebunden ist, das den Zugang zum Fluss ermöglicht.</p>
                 </div>
-
             </div>
-
         </div>
-
     </section>
 
-    <section class="bg-gray mb-2 mt-2 p-2">
+
+    <section class="ceo mb-2 mt-2 p-2 pt-2">
 
         <h2>Unsere Kunden sagen über uns</h2>
         <hr class="color-blue mt-2">
 
         <div class="row">
-            <div class="col6 bg-white">
-                <p class="font-small">Unsere Erfahrung war sehr positiv. Arbeiten Sie mit einem Management-Team
+            <div class="col6">
+                <p class="font-small pt-1">Unsere Erfahrung war sehr positiv. Arbeiten Sie mit einem
+                    Management-Team
                     zusammen, das auf unsere
                     Bedürfnisse eingeht und diese berücksichtigt. Was für ein Konzept! Ihre Professionalität zeigt sich
                     in Management, Arbeitsqualität und Kundenservice.</p>
+
+
                 <img src="images/Group 33.png" alt="ceo">
-                <div class="w-50 ">
-                    <h4 class="uppercase p-2">Morgan Di amata</h4>
-                    <p class="text-red">CEO - Dash Fondation</p>
+                <div class="w-50 text-center">
+                    <div class="d-flex-col-jcc">
+                        <div class="d-flex-flex-end">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                        <h4 class="uppercase p-2 bold">Morgan Di amata</h4>
+                        <p class="text-red">CEO - Dash Fondation</p>
+                    </div>
+
                 </div>
             </div>
-            <div class="col6 bg-white">
-                <p class="font-small">Unsere Erfahrung war sehr positiv. Arbeiten Sie mit einem Management-Team
+            <div class="col6  ">
+                <p class="font-small p-1">Unsere Erfahrung war sehr positiv. Arbeiten Sie mit einem Management-Team
                     zusammen, das auf unsere
                     Bedürfnisse eingeht und diese berücksichtigt. Was für ein Konzept! Ihre Professionalität zeigt sich
                     in Management, Arbeitsqualität und Kundenservice.</p>
                 <img src="images/Group 28.png" alt="developer">
-                <div class="w-50 ">
-                    <h4 class="uppercase p-2">Morgan Di amata</h4>
-                    <p class="text-red">CEO - Dash Fondation</p>
+                <div class="w-50 text-center">
+                    <div class="d-flex-col-jcc text-center">
+                        <div class="d-flex-flex-end">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                        <h4 class="uppercase p-2 bold">Morgan Di amata</h4>
+                        <p class="text-red">CEO - Dash Fondation</p>
+                    </div>
+
                 </div>
             </div>
         </div>
 
     </section>
 
-    <section class="last">
+    <section class="last ">
 
-        <img class="last-img overlay w-100" src="images/slide_2.jpg" alt="">
+        <div class="last-text">
+            <h2 class="absolute">Wie es funktioniert</h2>
+            <hr class="w-50 mt-2">
+        </div>
+        <img class="last-img overlay w-100 relative" src="images/slide_2.jpg" alt="">
 
         <div class="row">
 
-            <div class="col3 w-30 ">
+            <div class="col3 w-30 pt-1">
                 <div class="bg-yellow">
                     <div class="bg-purple">
-                        <i class="fas fa-street-view"></i>
+                        <i class="fas fa-map-marker-alt"></i>
                         <h3>FINDE UNS</h3>
                     </div>
                 </div>
             </div>
-            <div class="col3 w-30 ">
+            <div class="col3 w-30 pt-1">
                 <div class="bg-yellow-rotate">
                     <div class="bg-purple-rotate">
-                        <i class="fas fa-street-view"></i>
+                        <i class="fas fa-mobile-alt"></i>
+                        <i class="fas fa-envelope-open"></i>
                         <h3>Kontaktiere uns</h3>
                     </div>
                 </div>
             </div>
-            <div class="col3 w-30 ">
+            <div class="col3 w-30 pt-1">
                 <div class="bg-yellow">
                     <div class="bg-purple">
-                        <i class="fas fa-street-view"></i>
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-house-user"></i>
                         <h3>Mach dein
                             Traum</h3>
                     </div>
@@ -282,92 +304,123 @@
         </div>
 
     </section>
-    <!-- srediti kolove i dodati ikonice -->
-    <section class="contact d-flex mt-2">
 
-        <div class="row">
 
-            <div class="col4">
-                <h3>Kontaktiere uns!</h3>
+
+
+    <section class="contact mt-2 mb-4 pb-2">
+
+        <div class="row relative bg-gray">
+
+            <div class="col4 bg-white">
+                <h3 class="pt-2p pb-1">Kontaktiere uns!</h3>
                 <hr class="color-red m-r70">
                 <p>Kontaktieren Sie uns, um ein Problem zu lösen!</p>
-                <div class="d-flex">
-                    <i class="fas fa-user-circle"></i>
-                    <h4>Zoran Marusic
-                    </h4>
-                    <p>Maler- und Lackierermeister</p>
+                <div class=" text-center mt-2 mb-2 p-2">
+                    <i class="fas fa-user f-left fs-30"></i>
+                    <div>
+                        <h4>Zoran Marusic </h4>
+                        <p class="text-center ">Maler- und Lackierermeister</p>
+                    </div>
                 </div>
-                <div class="d-flex">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <h4>Büro adresse:
-                    </h4>
-                    <p>Ottostr. 3</p>
-                    <p>
-                        45470 Mülheim an der Ruhr</p>
+                <div class="text-center mt-2 mb-2 p-2">
+                    <i class="fas fa-globe-europe f-left fs-30"></i>
+                    <div>
+                        <h4 class="text-center">Büro adresse:
+                        </h4>
+                        <p>Ottostr. 3</p>
+                        <p class="text-center ">
+                            45470 Mülheim an der Ruhr</p>
+                    </div>
+                </div>
+                <div class="text-center mt-2 mb-2 p-2">
+                    <i class="fas fa-phone-square-alt f-left fs-30"></i>
+                    <div>
+                        <h4>Telefonnummern</h4>
+                        <p>Fon +49 (0) 208/91108405
+                        </p>
+                        <p class="text-center ">Fax +49 (0) 208/91108404
+                        </p>
+                        <p>Mobil +49 (0) 177-8609077</p>
+                    </div>
+                </div>
+                <div class="text-center mt-2  p-2 ">
+                    <i class="fas fa-envelope-open-text f-left fs-30"></i>
+                    <div>
+                        <h4>Mail Info
+                        </h4>
+                        <p class="text-center ">info@farbenwelt-gmbh.de</p>
+                    </div>
                 </div>
             </div>
 
-            <!-- input forma -->
-            <div class="col8">
-                <h3>In Kontakt kommen</h3>
-                <hr class="color-red ">
+
+            <div class="col8 bg-gray ">
+                <h3 class="pt-1 pb-1">In Kontakt kommen</h3>
+                <hr class="border-red ">
                 <p>Sollten Sie weiterführende Informationen oder eine Beratung wünschen, nutzen Sie bitte das unten
                     stehende Kontaktformular oder kontaktieren Sie uns direkt.</p>
-                <input class="mt-2 p-2" type="text" name="fname" id="fname" style="width:100%" placeholder="Name">
-                <div class="mt-2 mb-2 w-100"
-                    style="display: flex;flex-direction: row; justify-content: space-between;width: 100%;">
-                    <input class="w-50 p-1" type="email" name="email" id="email" placeholder="Email">
-                    <input class="w-50 p-1 " type="tel" name="tel" id="tel" placeholder="Tekefon">
+                <input class="mt-2 p-2 w-80" type="text" name="fname" id="fname" placeholder="Name">
+                <div class="email-phone mt-2 mb-2 ">
+                    <input class="email w-50 p-1" type="email" name="email" id="email" placeholder="Email">
+                    <input class="phone w-50 p-1 " type="tel" name="tel" id="tel" placeholder="Tekefon">
                 </div>
-                <textarea class="w-100 text-start color-black" rows="4" cols="50" name="comment" form="usrform">Nachricht...
+                <textarea class="w-100 text-start" rows="8" name="textarea" form="form">
                     </textarea>
-                <input class="p-2 w-30 mt-2 mb-2" style="float:right;" type="submit" value="SENDEN">
+                <input class=" send p-1 w-30 mt-2 mb-2" type="submit" value="SENDEN">
             </div>
         </div>
 
-    </section>
-
-    <section class="partners">
-
-        <h2 class="text-cetner text-red pb-1">Unsere Partner</h2>
-        <hr class="color-purple mb-1">
-        <div class="d-flex mt-2 mb-2">
-            <img src="/images/client-logo-1.png" alt="logo1">
-            <img src="/images/client-logo-2.png" alt="logo2">
-            <img src="/images/client-logo-3.png" alt="logo3">
-            <img src="/images/client-logo-4.png" alt="logo4">
-            <img src="/images/client-logo-5.png" alt="logo5">
-        </div>
 
     </section>
-    <!-- class="bg-black" -->
-    <footer class="bg-black mt-2 ">
 
-        <nav class="w-50">
-            <div class="logo w-100">
-                <img style="width: 100%;" src="images/logo_farbenwelt.png" alt="logo">
+    <section class="partners mt-2 pt-2 mb-2 pb-2">
+        <div class="container">
+            <h2 class="text-center text-red pb-1">Unsere Partner</h2>
+            <hr class="color-purple mb-4 ">
+            <div class="d-flex mt-2 mb-4">
+                <img src="/images/client-logo-1.png" alt="logo1">
+                <img src="/images/client-logo-2.png" alt="logo2">
+                <img src="/images/client-logo-3.png" alt="logo3">
+                <img src="/images/client-logo-4.png" alt="logo4">
+                <img src="/images/client-logo-5.png" alt="logo5">
             </div>
-            <ul>
-                <li><a href="#">home</a></li>
-                <li><a href="#">Wir uber uns?</a></li>
-                <li><a href="#">Impressionen</a></li>
-                <li><a href="#">Leistungen</a></li>
-                <li><a href="#">kontakt</a></li>
-            </ul>
-        </nav>
-
-        <div class="tekst">
-            <p class="color-white">Für uns ist die kreative, individuelle Gestaltung von Räumen und Fassaden eine der
-                wichtigsten Aufgaben.</p>
-            <p class="color-white">
-                Tradition und dem handwerklichen Können verpflichtet. Dabei verlieren wir nicht die Nähe zum Kunden und
-                sind
-                auf Grund unserer bewusst klein gehaltenen Strukturen jederzeit für Sie erreichbar.</p>
-            <hr class="border-white w-30 mt-2 ">
-            <p class=" color-white p-2">design by <span class="color-blue">itMedia</span></p>
         </div>
+    </section>
 
+
+
+    <footer class="footer-bg mt-2">
+
+        <div class="z-index-5">
+
+            <div class="  nav2  row ">
+                <div class=" logo col3 px-0">
+                    <img src="images/logo_farbenwelt.png" alt="logo">
+                </div>
+                <div class="col9">
+                    <ul>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">Wir uber uns?</a></li>
+                        <li><a href="#">Impressionen</a></li>
+                        <li><a href="#">Leistungen</a></li>
+                        <li><a href="#">kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="  tekst row d-flex-col-jcc">
+                <p class="color-white font-small p-2 pb-2 lh-2">
+                    Für uns ist die kreative, individuelle Gestaltung von Räumen und Fassaden eine der wichtigsten
+                    Aufgaben.
+                    Tradition und dem handwerklichen Können verpflichtet. Dabei verlieren wir nicht die Nähe zum Kunden
+                    und
+                    sind auf Grund unserer bewusst klein gehaltenen Strukturen jederzeit für Sie erreichbar. </p>
+                <hr class="border-white w-30 mt-2 ">
+                <p class=" color-white p-2">design by <span class="color-blue "><a href="#">itMedia</a></span></p>
+            </div>
+        </div>
     </footer>
+
 
 </body>
 
