@@ -7,7 +7,6 @@ header {
     height: 70px;
     width: 100%;
     background-color: white;
-
 }
 
 header .logo {
@@ -88,6 +87,10 @@ nav ul li {
     list-style: none;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 nav ul li a {
     color: gray;
     text-decoration: none;
@@ -95,6 +98,7 @@ nav ul li a {
 
 .active,
 nav ul li a:hover {
+    font-weight: bold;
     color: #182982;
 }
 
@@ -279,6 +283,10 @@ section.column {
     margin-left: 40px;
 }
 
+.mr-95 {
+    margin-right: 95%;
+}
+
 .text-white {
     color: white;
 }
@@ -339,7 +347,7 @@ section.column {
     text-align: center;
 }
 
-.bold {
+.text-start .bold {
     font-weight: 800;
 }
 
@@ -793,9 +801,7 @@ section.something {
 .something-text {
     display: flex;
     flex-direction: row;
-    margin-left: 35%;
     text-align: center;
-    margin-right: 35%;
     position: absolute;
     color: white;
     padding: 20px;
@@ -1081,12 +1087,23 @@ button.absolute.border-yellow:hover {
         height: 100vh;
     }
 
+    .cards {
+        height: auto;
+    }
+
     .cards .row {
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin-left: 0;
         margin-right: 0;
+
+    }
+
+    .column-4 {
+        width: auto;
+        margin-bottom: 20px;
     }
 
     .row .column {
@@ -1117,6 +1134,10 @@ button.absolute.border-yellow:hover {
     }
 
     .middle-text {
+        padding: 0;
+    }
+
+    .middle-text button {
         padding: 0;
     }
 
@@ -1172,6 +1193,23 @@ button.absolute.border-yellow:hover {
     .last-img.overlay {
         height: 110vh;
     }
+
+    .col6 {
+        width: auto;
+    }
+
+    .roww .col-4 {
+        margin-left: 2px;
+    }
+
+    .contact .p-1 {
+        padding: 0%;
+    }
+
+    .contact .col4 {
+        width: 100% !important;
+    }
+
 
     .last-text {
         top: 20px;
@@ -1309,6 +1347,10 @@ button.absolute.border-yellow:hover {
         width: 100%;
     }
 
+    .partners img {
+        width: 20%;
+    }
+
     .column .row {
         flex-direction: column;
     }
@@ -1332,6 +1374,19 @@ button.absolute.border-yellow:hover {
 
     .front-text.kontakt {
         width: 100%;
+    }
+
+    section .front .front-img img {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .front-text.kontakt {
+        width: 100% !important;
+    }
+
+    h1 {
+        font-size: 2.2rem;
     }
 
 }
