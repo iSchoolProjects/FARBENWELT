@@ -16,11 +16,11 @@
 
 <body>
 
-    <header>
+    <header class="w-100">
 
         <div class="logo sticky">
             <a href="index.html">
-                <img src="/images/logo.png" alt="logo"></a>
+                <img src="images/logo.png" alt="logo"></a>
         </div>
 
         <div class="info">
@@ -46,7 +46,7 @@
 
     <nav>
 
-        <ul>
+        <ul class="container">
             <li><a class="bold active" href="index.html">home</a></li>
             <li><a class="bold" href="about.html">Wir uber uns?</a></li>
             <li><a class="bold" href="works.html">Impressionen</a></li>
@@ -71,7 +71,7 @@
 
     </section>
 
-    <section class="cards my-2 pt-2">
+    <section class="cards my-2 pt-2 w-100">
 
         <div class="row">
 
@@ -136,10 +136,10 @@
 
     </section>
 
-    <section class="middle w-100">
+    <section class="middle w-100 ">
 
-        <div class="middle-img overlay">
-            <img class="w-100" src="images/color-patterns-1984227_1920.jpg" alt="painting">
+        <div class="middle-img overlay w-100">
+            <img class="w-100 ipad-vh" src="images/color-patterns-1984227_1920.jpg" alt="painting">
         </div>
 
         <div class="middle-text  mt-2 container">
@@ -168,7 +168,7 @@
         <div class="project">
 
             <h2 class="pb-1 text-yellow">Neueste Projekte</h2>
-            <hr class="center border-red w-50">
+            <hr class="border-red w-50">
             <div class="row mt-2 d-flex-col-jcc">
                 <div class="border-shadow-row mb-4">
                     <div class="col-8 d-flex-col-jcc">
@@ -251,7 +251,7 @@
         <div class="row">
 
 
-            <div class="col-6 ml-4">
+            <div class="col-6">
 
                 <p class="font-small p-1">Unsere Erfahrung war sehr positiv. Arbeiten Sie mit einem Management-Team
                     zusammen, das auf unsere
@@ -271,7 +271,7 @@
                 </div>
             </div>
 
-            <div class="col-6 ml-4">
+            <div class="col-6">
 
                 <p class="font-small p-1">Unsere Erfahrung war sehr positiv. Arbeiten Sie mit einem Management-Team
                     zusammen, das auf unsere
@@ -342,7 +342,7 @@
 
 
 
-    <section class="contact mt-2 mb-4 pb-2">
+    <section class="contact pb-2">
 
         <div class="row relative bg-gray">
 
@@ -354,13 +354,13 @@
                     <i class="fas fa-user f-left fs-30"></i>
                     <div>
                         <h4>Zoran Marusic </h4>
-                        <p class="text-center">Maler- und Lackierermeister</p>
+                        <p>Maler- und Lackierermeister</p>
                     </div>
                 </div>
                 <div class="text-center mt-2 mb-2 p-2">
                     <i class="fas fa-globe-europe f-left fs-30"></i>
                     <div>
-                        <h4 class="text-center">Büro adresse:
+                        <h4>Büro adresse:
                         </h4>
                         <p>Ottostr. 3</p>
                         <p>
@@ -395,14 +395,15 @@
                 <hr class="border-red w-25 mr-95 my-2">
                 <p>Sollten Sie weiterführende Informationen oder eine Beratung wünschen, nutzen Sie bitte das unten
                     stehende Kontaktformular oder kontaktieren Sie uns direkt.</p>
-                <input class="mt-2 p-2 w-80" type="text" name="fname" id="fname" placeholder="Name">
+                <div>
+                    <input class="mt-2 py-2 w-100" type="text" name="fname" id="fname" placeholder="Name"></div>
                 <div class="email-phone mt-2 mb-2 w-100">
-                    <input class="email w-45 p-2" type="email" name="email" id="email" placeholder="Email">
-                    <input class="phone w-45 p-2" type="tel" name="tel" id="tel" placeholder="Telefon">
+                    <input class="email w-100 p-2" type="email" name="email" id="email" placeholder="Email">
+                    <input class="phone w-100 p-2" type="tel" name="tel" id="tel" placeholder="Telefon">
                 </div>
                 <textarea class="w-100 text-start" rows="8" name="textarea" form="form">
                     </textarea>
-                <input class=" send p-1 w-25 mt-2 mb-2" type="submit" value="SENDEN">
+                <input class=" send p-1 w-25 mt-2 mb-2" type="submit" value="SENDEN" placeholder="Test">
             </div>
         </div>
 
@@ -413,7 +414,7 @@
         <div class="container">
             <h2 class="text-center text-red pb-1">Unsere Partner</h2>
             <hr class="border-blue mb-4 ">
-            <div class="d-flex mt-2 mb-4">
+            <div class="d-flex mt-2 mb-4 logo-section mobile-w">
                 <img src="images/client-logo-1.png" alt="logo1">
                 <img src="images/client-logo-2.png" alt="logo2">
                 <img src="images/client-logo-3.png" alt="logo3">

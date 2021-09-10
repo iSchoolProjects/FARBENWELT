@@ -5,7 +5,6 @@ body {
 header {
     display: flex;
     height: 70px;
-    width: 100%;
     background-color: white;
 }
 
@@ -53,7 +52,6 @@ header .info {
     align-items: flex-start;
 }
 
-
 hr {
     width: 10%;
 }
@@ -77,7 +75,6 @@ nav ul {
     display: flex;
     justify-content: space-evenly;
 }
-
 
 nav ul li {
     padding: 20px;
@@ -170,9 +167,9 @@ h3 {
     align-items: center;
 }
 
-.col-4 {
+/* .col-4 {
     width: fit-content;
-}
+} */
 
 .container {
     margin-left: 20%;
@@ -224,7 +221,7 @@ h3 {
 }
 
 .mt-4 {
-    margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 .mb-2 {
@@ -428,7 +425,6 @@ button:hover {
     flex-direction: row;
 }
 
-
 .d-flex-flex-end {
     display: flex;
     justify-content: flex-end;
@@ -441,10 +437,6 @@ button:hover {
 
 .border-red {
     border: 1px solid red;
-}
-
-.color-blue {
-    color: #182982;
 }
 
 .color-white {
@@ -468,7 +460,7 @@ button:hover {
 }
 
 .cards {
-    width: 100%;
+
     height: 200px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -490,7 +482,6 @@ section.middle {
 }
 
 .middle-img.overlay {
-    width: 100%;
     opacity: 0.3;
 }
 
@@ -529,10 +520,6 @@ section.middle {
     padding-top: 20px;
 }
 
-.project .row {
-    box-shadow: 3px -3px 14px 5px rgba(0, 0, 0, 0.11);
-    align-items: center;
-}
 
 .box-shadow {
     box-shadow: 3px -3px 14px 5px rgba(0, 0, 0, 0.11) !important;
@@ -550,10 +537,6 @@ section.middle {
 
 .col4 p {
     text-align: start;
-}
-
-.center {
-    float: none !important;
 }
 
 section.last {
@@ -618,8 +601,6 @@ section.last .row {
     border-radius: 5px;
     box-shadow: 3px -3px 14px 5px rgba(0, 0, 0, 0.11);
 }
-
-
 
 .bg-yellow {
     background-color: #E6C311;
@@ -686,7 +667,6 @@ section.last .row {
     font-size: 0.8rem;
 }
 
-
 .text-red {
     color: red;
 }
@@ -735,7 +715,6 @@ footer {
     text-align: center;
     background: black;
 }
-
 
 footer.overlay {
     width: 100%;
@@ -906,7 +885,6 @@ input.mt-2.p-2 {
 }
 
 .email-phone {
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -914,14 +892,6 @@ input.mt-2.p-2 {
 
 input {
     height: 20px;
-}
-
-input#email {
-    width: 100% !important;
-}
-
-input#tel {
-    width: 100% !important;
 }
 
 input.send {
@@ -945,7 +915,6 @@ input.send {
 .fs-30 {
     font-size: 30px;
 }
-
 
 .align-center {
     align-items: center;
@@ -991,11 +960,6 @@ span a {
     background-color: #f0f4f7;
 }
 
-.align-center {
-    align-items: center;
-    align-content: center;
-}
-
 button.absolute.border-yellow {
     padding: 10px 20px !important;
 }
@@ -1007,7 +971,6 @@ button.absolute.border-yellow:hover {
 .col4.text-left.mt-2 {
     box-shadow: 3px -3px 14px 5px rgba(0, 0, 0, 0.11);
 }
-
 
 .flex-reverse {
     display: flex;
@@ -1029,11 +992,55 @@ input {
     border: 1px solid gray;
 }
 
+@media(width:1024px) {
+    .info::before {
+        display: none !important;
+    }
 
-@media (max-width:700px) {
+    nav .container,
+    .partners .container {
+        margin: 0 auto !important;
+    }
+
+    .partners img {
+        width: 17.666667%;
+    }
+
+    section.last img {
+        width: 100vw !important;
+    }
+
+    .ipad-reverse {
+        flex-direction: column;
+    }
+
+    .ipad-vh {
+        height: 50vh !important;
+    }
+
+    .row {
+        margin: 0 0 auto auto !important;
+    }
+
+    section.ceo .row {
+        flex-direction: row !important;
+    }
+
+
+}
+
+@media (max-width:768px) {
 
     .mobile-w {
         width: 100% !important;
+    }
+
+    .mobile-90 {
+        width: 90% !important;
+    }
+
+    .mobile-m-0 {
+        margin: 0% !important;
     }
 
     .mobile-flex-row {
@@ -1053,6 +1060,10 @@ input {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .w-700 {
+        width: 700px !important;
     }
 
     .col-8 {
@@ -1247,7 +1258,6 @@ input {
         margin-right: 0;
     }
 
-
     .contact .col-8 {
         display: flex;
         flex-direction: column;
@@ -1273,12 +1283,15 @@ input {
 
     .email-phone input,
     .email-phone {
-        width: 90%;
+        width: 90% !important;
         margin-bottom: 20px;
     }
 
-    input#email {
-        width: 90%;
+    input#email,
+    input#tel {
+        width: 90% !important;
+        margin-left: 10px;
+        padding: 20px !important;
     }
 
     .vh100 {
@@ -1301,7 +1314,6 @@ input {
 
     .bg-purple,
     .bg-purple-rotate {
-
         margin: 10px 0;
     }
 
@@ -1310,7 +1322,15 @@ input {
         width: 90%;
     }
 
+    .partners .logo-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column !important;
+    }
+
     .partners img {
+        padding: 20px;
         width: 15%;
     }
 
@@ -1375,17 +1395,8 @@ input {
         padding-top: 20px;
     }
 
-    .jobs .col4 {
-        width: 100% !important;
-    }
-
     section.front.contact-page {
         height: 250px;
-        width: 100%;
-    }
-
-    .front-text.kontakt {
-        width: 100%;
     }
 
     section .front .front-img img {
@@ -1405,6 +1416,7 @@ input {
         position: fixed;
         top: 0;
         z-index: 100;
+        background-color: #fff;
     }
 
     .contact .p-2 {
