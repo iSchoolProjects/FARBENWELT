@@ -97,16 +97,11 @@ nav ul li a:hover {
 }
 
 section.front {
-    justify-content: center;
-    align-items: center;
-    display: flex;
     background: black;
     overflow: hidden;
 }
 
 .front-img.overlay {
-    margin-left: 20%;
-    margin-right: 20%;
     align-items: stretch;
     opacity: 0.5;
 }
@@ -1010,9 +1005,6 @@ button.absolute.border-yellow:hover {
 
 .border-shadow-row {
     box-shadow: 3px -3px 14px 5px rgba(0, 0, 0, 0.11);
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 input {
@@ -1071,12 +1063,26 @@ input {
         margin-top: 90px;
     }
 
+    .col-6 {
+        margin: 0;
+        padding: 0;
+    }
 
+}
+
+@media (width:768px) {
+    .zoom-normal {
+        zoom: 120% !important;
+    }
+
+    section.ceo .row {
+        flex-direction: row !important;
+    }
 }
 
 @media (max-width:768px) {
     .zoom-normal {
-        zoom: 70%;
+        zoom: 80%;
     }
 
     .mobile-w {
@@ -1169,7 +1175,6 @@ input {
         align-items: center;
         margin-left: 0;
         margin-right: 0;
-
     }
 
     .column-4 {
@@ -1282,8 +1287,23 @@ input {
         padding: 0%;
     }
 
-    .contact .col4 {
+    .contact .col-4 {
+        padding: 34px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        background: white;
         width: 100% !important;
+
+    }
+
+    .contact .col-8 {
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
     }
 
     .last-text {
